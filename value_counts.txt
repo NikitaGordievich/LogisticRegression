@@ -1,0 +1,61 @@
+------------
+pclass_1 pclass_1
+0    675
+1    237
+Name: count, dtype: int64------------
+pclass_2 pclass_2
+0    721
+1    191
+Name: count, dtype: int64------------
+pclass_3 pclass_3
+1    484
+0    428
+Name: count, dtype: int64------------
+sex_female sex_female
+0    581
+1    331
+Name: count, dtype: int64------------
+sex_male sex_male
+1    581
+0    331
+Name: count, dtype: int64------------
+cabin_A cabin_A
+0    894
+1     18
+Name: count, dtype: int64------------
+cabin_B cabin_B
+0    863
+1     49
+Name: count, dtype: int64------------
+cabin_C cabin_C
+0    842
+1     70
+Name: count, dtype: int64------------
+cabin_D cabin_D
+0    880
+1     32
+Name: count, dtype: int64------------
+cabin_E cabin_E
+0    886
+1     26
+Name: count, dtype: int64------------
+cabin_F cabin_F
+0    894
+1     18
+Name: count, dtype: int64------------
+cabin_U cabin_U
+1    699
+0    213
+Name: count, dtype: int64------------
+embarked_C embarked_C
+0    726
+1    186
+Name: count, dtype: int64------------
+embarked_Q embarked_Q
+0    825
+1     87
+Name: count, dtype: int64------------
+embarked_S embarked_S
+1    639
+0    273
+Name: count, dtype: int64
