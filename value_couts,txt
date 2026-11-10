@@ -1,105 +1,105 @@
 age: age
-0.000000    190
-0.300000     33
-0.225000     31
-0.275000     29
-0.375000     28
-           ... 
-0.837500      1
-0.009375      1
-0.181250      1
-0.004166      1
-0.008334      1
-Name: count, Length: 96, dtype: int64 
+0.00000    181
+0.30000     32
+0.27500     31
+0.22500     31
+0.26250     28
+          ... 
+0.70000      1
+1.00000      1
+0.18125      1
+0.83750      1
+0.29375      1
+Name: count, Length: 92, dtype: int64 
 sibsp: sibsp
-0.000    630
-0.125    216
-0.250     27
+0.000    637
+0.125    213
+0.250     23
 0.500     15
 0.375     13
 1.000      7
 0.625      4
 Name: count, dtype: int64 
 parch: parch
-0.000000    697
+0.000000    701
 0.111111    113
-0.222222     82
-0.444444      6
-0.555556      6
-0.333333      5
-1.000000      2
-0.666667      1
+0.222222     80
+0.333333      6
+0.555556      5
+0.444444      4
+0.666667      2
+1.000000      1
 Name: count, dtype: int64 
 fare: fare
-0.025374    44
-0.015127    38
-0.015412    38
-0.015713    36
-0.020495    30
+0.025374    45
+0.015127    39
+0.015713    39
+0.015412    33
+0.050749    29
             ..
-0.063086     1
-0.038972     1
+0.018909     1
+0.066404     1
 0.063436     1
-0.030726     1
-0.019218     1
-Name: count, Length: 252, dtype: int64 
+0.013614     1
+0.019177     1
+Name: count, Length: 254, dtype: int64 
 pclass_1: pclass_1
-0    675
-1    237
+0    677
+1    235
 Name: count, dtype: int64 
 pclass_2: pclass_2
 0    721
 1    191
 Name: count, dtype: int64 
 pclass_3: pclass_3
-1    484
-0    428
+1    486
+0    426
 Name: count, dtype: int64 
 sex_female: sex_female
-0    581
-1    331
+0    585
+1    327
 Name: count, dtype: int64 
 sex_male: sex_male
-1    581
-0    331
+1    585
+0    327
 Name: count, dtype: int64 
 cabin_A: cabin_A
-0    894
-1     18
+0    897
+1     15
 Name: count, dtype: int64 
 cabin_B: cabin_B
-0    863
-1     49
+0    862
+1     50
 Name: count, dtype: int64 
 cabin_C: cabin_C
-0    842
-1     70
+0    847
+1     65
 Name: count, dtype: int64 
 cabin_D: cabin_D
-0    880
-1     32
+0    881
+1     31
 Name: count, dtype: int64 
 cabin_E: cabin_E
-0    886
-1     26
+0    882
+1     30
 Name: count, dtype: int64 
 cabin_F: cabin_F
-0    894
-1     18
+0    898
+1     14
 Name: count, dtype: int64 
 cabin_U: cabin_U
-1    699
-0    213
+1    707
+0    205
 Name: count, dtype: int64 
 embarked_C: embarked_C
-0    726
-1    186
+0    721
+1    191
 Name: count, dtype: int64 
 embarked_Q: embarked_Q
-0    825
-1     87
+0    824
+1     88
 Name: count, dtype: int64 
 embarked_S: embarked_S
-1    639
-0    273
+1    633
+0    279
 Name: count, dtype: int64 
