@@ -39,7 +39,3 @@ class BinariCrossEntropy():
 class NotForwardExcaption(Exception):
     def __init__(self,m):
             super().__init__(self,m)
-
-
-r=BinariCrossEntropy()
-r.backward()
