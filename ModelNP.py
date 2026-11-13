@@ -13,7 +13,7 @@ class LogisticModel():
             self.b=np.zeros((1,),dtype=np.float32)
 
         y=x@self.w+self.b
-        sigmoid=1/(1+np.exp(-y))
+        sigmoid=1/(1+np.exp(-np.clip(y,-10,6)))
         self.logits=sigmoid
         self.x=x
         return sigmoid
@@ -21,9 +21,9 @@ class LogisticModel():
     def backward(self,y_target):
         if self.logits is None or self.x is None:
              raise NotForwardExcaption('Don`t Forward predict')
-        b_grad=self.logits-y_target
+        b_grad=np.clip(self.logits,0.005,0.995)-y_target
         w_grad=self.x.T@b_grad
-        return w_grad,np.mean(b_grad)
+        return w_grad/self.x.shape[0],np.mean(b_grad,keepdims=True)
     
     def apply(self,grad):
         self.w=self.w-grad[0]
@@ -33,17 +33,10 @@ class LogisticModel():
 
 class BinariCrossEntropy():
     def __init__(self):
-        self.y_p=None
-
+        pass
     def __call__(self,logits: np.ndarray,y_target: np.ndarray)->np.ndarray:
-        y=np.mean(y_target*np.log(logits)+(1-y_target)*np.log(1-logits))
-        self.y_p=y_target
-        return y
-    
-    def backward(self):
-        if self.y_p is None:
-            raise NotForwardExcaption('Don`t Forward predict')
-        return self.y_p
+        loss=-np.mean(y_target*np.log(logits)+(1-y_target)*np.log(1-logits))
+        return loss
 
 class NotForwardExcaption(Exception):
     def __init__(self,m):
